@@ -22,10 +22,10 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "http-proxy": "1.0.2",
-    "redis": "0.10.x",
-    "lru-cache": "2.5.x",
-    "minimist": "0.0.8"
+    "http-proxy": "1.14.x",
+    "redis": "2.6.x",
+    "lru-cache": "4.0.x",
+    "minimist": "1.2.0"
   },
   "devDependencies": {
     "mocha": "1.x",
