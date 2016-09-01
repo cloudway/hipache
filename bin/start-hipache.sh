@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/sh
 
 if [ -n "$HIPACHE_TLS_KEY" -a -n "$HIPACHE_TLS_CERT" ]; then
     cat > /hipache/config/config.json <<EOF
@@ -7,8 +7,8 @@ if [ -n "$HIPACHE_TLS_KEY" -a -n "$HIPACHE_TLS_CERT" ]; then
         "accessLog": "/var/log/hipache/hipache.log",
         "workers": 10,
         "maxSockets": 100,
-        "deadBackendTTL": 300,
-        "tcpTimeout": 30,
+        "deadBackendTTL": 30,
+        "tcpTimeout": 600,
         "retryOnError": 3,
         "deadBackendOn500": true,
         "httpKeepAlive": false,
